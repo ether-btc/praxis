@@ -37,7 +37,7 @@ Confidence: INSUFFICIENT (<50%) — cannot recommend without constraint envelope
 
 The agent classified the problem, selected reasoning frameworks, asked constraint-specific questions instead of generic ones, reframed the real problem, and reported calibrated confidence — all before writing a single line of code. Another example below:
 
-! [example_problem_classification](assets/example_problem_classification.jpg)
+![example_problem_classification](assets/example_problem_classification.jpg)
 ## Test results
 
 Built through iterations of testing and tuning. Every critical test passes.

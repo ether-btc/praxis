@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Praxis session-start hook — injects reasoning protocol at session start
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PLUGIN_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+SKILL_FILE="$PLUGIN_ROOT/skills/using-praxis/SKILL.md"
+
+if [ ! -f "$SKILL_FILE" ]; then
+  exit 0
+fi
+
+# Strip YAML frontmatter, emit skill content
+sed '1{/^---$/!q;};1,/^---$/d' "$SKILL_FILE"

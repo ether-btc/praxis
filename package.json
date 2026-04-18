@@ -1,0 +1,10 @@
+{
+  "name": "praxis",
+  "version": "1.0.3",
+  "description": "Reasoning methodology layer for AI agents",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/_cyr4x/praxis"
+  }
+}

@@ -1,26 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#07080c"/>
-      <stop offset="100%" stop-color="#0d1020"/>
-    </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00e5ff"/>
-      <stop offset="100%" stop-color="#e040fb"/>
+      <stop offset="0%" stop-color="#0969da"/>
+      <stop offset="100%" stop-color="#8250df"/>
     </linearGradient>
     <linearGradient id="line-g" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#00e5ff" stop-opacity="0.4"/>
-      <stop offset="85%" stop-color="#e040fb" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#e040fb" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0969da" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#0969da" stop-opacity="0.35"/>
+      <stop offset="85%" stop-color="#8250df" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8250df" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="#ffffff"/>
 
-  <!-- Grid pattern -->
-  <g stroke="#1e2235" stroke-width="0.5" opacity="0.3">
+  <!-- Subtle grid -->
+  <g stroke="#e8e8e8" stroke-width="0.5" opacity="0.5">
     <line x1="0" y1="60" x2="1200" y2="60"/>
     <line x1="0" y1="120" x2="1200" y2="120"/>
     <line x1="0" y1="180" x2="1200" y2="180"/>
@@ -32,35 +28,31 @@
     <line x1="1000" y1="0" x2="1000" y2="300"/>
   </g>
 
-  <!-- Accent line top -->
-  <rect x="0" y="0" width="1200" height="2" fill="url(#accent)"/>
-
-  <!-- Glow orbs -->
-  <circle cx="300" cy="150" r="120" fill="#00e5ff" opacity="0.03"/>
-  <circle cx="900" cy="150" r="120" fill="#e040fb" opacity="0.03"/>
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#accent)"/>
 
   <!-- Title -->
   <text x="600" y="105" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="64" font-weight="900" letter-spacing="-2" fill="url(#accent)">PRAXIS</text>
 
   <!-- Subtitle -->
-  <text x="600" y="145" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="16" fill="#8890a8" letter-spacing="4" font-weight="400">REASONING METHODOLOGY FOR AI AGENTS</text>
+  <text x="600" y="145" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="16" fill="#57606a" letter-spacing="4" font-weight="400">REASONING METHODOLOGY FOR AI AGENTS</text>
 
   <!-- Divider -->
   <rect x="200" y="170" width="800" height="1" fill="url(#line-g)"/>
 
   <!-- Stats -->
-  <text x="380" y="210" text-anchor="middle" font-family="'Courier New',monospace" font-size="28" font-weight="700" fill="#00e5ff">8</text>
-  <text x="380" y="232" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#555d78" letter-spacing="1">ENFORCEMENT SKILLS</text>
+  <text x="380" y="212" text-anchor="middle" font-family="'Courier New',monospace" font-size="30" font-weight="700" fill="#0969da">8</text>
+  <text x="380" y="234" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8b949e" letter-spacing="1">ENFORCEMENT SKILLS</text>
 
-  <text x="600" y="210" text-anchor="middle" font-family="'Courier New',monospace" font-size="28" font-weight="700" fill="#00e5ff">45</text>
-  <text x="600" y="232" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#555d78" letter-spacing="1">FRAMEWORKS</text>
+  <text x="600" y="212" text-anchor="middle" font-family="'Courier New',monospace" font-size="30" font-weight="700" fill="#0969da">45</text>
+  <text x="600" y="234" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8b949e" letter-spacing="1">FRAMEWORKS</text>
 
-  <text x="820" y="210" text-anchor="middle" font-family="'Courier New',monospace" font-size="28" font-weight="700" fill="#e040fb">v1.0.0</text>
-  <text x="820" y="232" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#555d78" letter-spacing="1">RELEASE</text>
+  <text x="820" y="212" text-anchor="middle" font-family="'Courier New',monospace" font-size="30" font-weight="700" fill="#8250df">v1.0.0</text>
+  <text x="820" y="234" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8b949e" letter-spacing="1">RELEASE</text>
 
-  <!-- Bottom tagline -->
-  <text x="600" y="275" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#555d78">Think before you act · Classify → Reason → Validate → Execute</text>
+  <!-- Tagline -->
+  <text x="600" y="275" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#8b949e">Think before you act · Classify → Reason → Validate → Execute</text>
 
   <!-- Bottom accent line -->
-  <rect x="0" y="298" width="1200" height="2" fill="url(#accent)"/>
+  <rect x="0" y="297" width="1200" height="3" fill="url(#accent)"/>
 </svg>

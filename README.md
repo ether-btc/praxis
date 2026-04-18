@@ -1,3 +1,5 @@
+[Praxis Banner](assets/banner.svg)
+
 # Praxis
 
 **A reasoning methodology plugin for AI coding agents.**
@@ -5,6 +7,10 @@
 Praxis makes your agent think before it acts — classifying problems, selecting from 45 reasoning frameworks, enforcing cognitive checklists, and validating solutions before execution. It works standalone or alongside [Superpowers](https://github.com/obra/superpowers).
 
 Superpowers tells agents **how to execute**. Praxis tells agents **how to think**. Together, your agent reasons deeply *then* executes precisely.
+
+
+[How Praxis Works](assets/workflow.svg)
+
 
 ## What it actually does
 

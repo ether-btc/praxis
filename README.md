@@ -41,7 +41,7 @@ The agent classified the problem, selected reasoning frameworks, asked constrain
 
 Built through iterations of testing and tuning. Every critical test passes.
 
-| Test | What it proves | Result |
+| Test | What it proves |
 |---|---|---|
 | T1: Trivial skip | Doesn't over-trigger on "fix this typo" |
 | T4: Non-trivial activate | Fires problem-classification on design tasks |

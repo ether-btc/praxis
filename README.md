@@ -1,4 +1,4 @@
-[Praxis Banner](assets/banner.svg)
+! [Praxis Banner](assets/banner.svg)
 
 # Praxis
 
@@ -8,8 +8,7 @@ Praxis makes your agent think before it acts — classifying problems, selecting
 
 Superpowers tells agents **how to execute**. Praxis tells agents **how to think**. Together, your agent reasons deeply *then* executes precisely.
 
-
-[How Praxis Works](assets/workflow.svg)
+! [How Praxis Works](assets/workflow.svg)
 
 
 ## What it actually does

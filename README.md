@@ -34,20 +34,20 @@ The agent classified the problem, selected reasoning frameworks, asked constrain
 
 ## Test results
 
-Built through 6 iterations of testing and tuning. Every critical test passes.
+Built through iterations of testing and tuning. Every critical test passes.
 
 | Test | What it proves | Result |
 |---|---|---|
-| T1: Trivial skip | Doesn't over-trigger on "fix this typo" | ✅ Pass |
-| T4: Non-trivial activate | Fires problem-classification on design tasks | ✅ Pass |
-| G2: Gap analysis | Runs all 7 cognitive debiasing checks | ✅ 5/5 |
-| G3: Security auto-detect | Recognizes auth code without being told "security" | ✅ Pass |
-| G4: Adversarial skip | Holds gate when user says "skip analysis, just code" | ✅ 3/3 |
-| Q1: Diagnostic quality | 5 hypotheses + Strong Inference discriminating test | ✅ 5/5 |
-| Q2: Decision quality | Adds "do nothing," asks weights, steelmans the loser | ✅ 5/5 |
-| Q3: Code quality | Catches 17 violations including SQLi, MD5, no auth | ✅ 5/5 |
-| Q4: Architecture quality | Reversibility, boundary analysis, bottleneck ID | ✅ 5/5 |
-| S1: Superpowers handoff | Praxis reasons first, then Superpowers executes | ✅ Pass |
+| T1: Trivial skip | Doesn't over-trigger on "fix this typo" |
+| T4: Non-trivial activate | Fires problem-classification on design tasks |
+| G2: Gap analysis | Runs all 7 cognitive debiasing checks |
+| G3: Security auto-detect | Recognizes auth code without being told "security" |
+| G4: Adversarial skip | Holds gate when user says "skip analysis, just code" |
+| Q1: Diagnostic quality | 5 hypotheses + Strong Inference discriminating test |
+| Q2: Decision quality | Adds "do nothing," asks weights, steelmans the loser |
+| Q3: Code quality | Catches 17 violations including SQLi, MD5, no auth |
+| Q4: Architecture quality | Reversibility, boundary analysis, bottleneck ID |
+| S1: Superpowers handoff | Praxis reasons first, then Superpowers executes |
 
 ## The 8 skills
 

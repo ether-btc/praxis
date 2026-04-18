@@ -71,13 +71,6 @@ Each skill is a behavioral protocol with mandatory gates — not a reference doc
 
 ## Installation
 
-### Claude Code (Marketplace)
-
-```
-/plugin marketplace add xD4O/praxis
-/plugin install praxis@praxis-marketplace
-```
-
 ### Claude Code (Manual)
 
 ```bash
@@ -85,9 +78,8 @@ Each skill is a behavioral protocol with mandatory gates — not a reference doc
 cp -r praxis ~/.claude/skills/praxis
 
 # Windows
-robocopy "praxis" "%USERPROFILE%\.claude\skills\praxis" /E
+Drop the contents into: %USERPROFILE%\.claude\skills\praxis
 ```
-
 Start a new Claude Code session. Praxis activates automatically on non-trivial tasks.
 
 ### With Superpowers

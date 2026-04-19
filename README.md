@@ -137,4 +137,4 @@ MIT
 
 ---
 
-Built by [@_cyr4x](https://x.com/@_cyr4x) · [GitHub](https://github.com/xD4O/praxis)
+Built by [@_cyr4x](https://x.com/_cyr4x) · [GitHub](https://github.com/xD4O/praxis)

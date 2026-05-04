@@ -1,0 +1,16 @@
+name: praxis
+description: Multi-agent reasoning framework with 9 mandatory protocol skills.
+type: skill
+version: 1.0.0
+
+related_skills:
+  - subagent-driven-development
+  - comprehensive-test-suite
+
+verification:
+  - command: test -d skills/using-praxis && test -d skills/problem-classification && test -d skills/architecture-reasoning
+    description: Verify all 9 skill subdirectories exist
+  - command: test -f skills/using-praxis/SKILL.md && test -f skills/problem-classification/SKILL.md && test -f skills/architecture-reasoning/SKILL.md && test -f skills/code-quality-analysis/SKILL.md && test -f skills/decision-analysis/SKILL.md && test -f skills/diagnostic-reasoning/SKILL.md && test -f skills/gap-analysis/SKILL.md && test -f skills/security-reasoning/SKILL.md && test -f skills/strategic-reasoning/SKILL.md
+    description: Verify all 9 skill SKILL.md files exist
+  - command: grep -q "^name:" skills/using-praxis/SKILL.md && grep -q "^name:" skills/architecture-reasoning/SKILL.md
+    description: Validate YAML frontmatter on key skills

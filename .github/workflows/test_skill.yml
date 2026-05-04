@@ -1,0 +1,51 @@
+name: Validate Skill
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check root SKILL.md exists
+        run: test -f SKILL.md || exit 1
+
+      - name: Validate root YAML frontmatter
+        run: |
+          grep -q "^name:" SKILL.md || exit 1
+          grep -q "^description:" SKILL.md || exit 1
+
+      - name: Validate deps.yaml
+        run: python3 -c "import yaml; yaml.safe_load(open('deps.yaml'))" || exit 1
+
+      - name: Check no leaked credentials in root SKILL.md
+        run: |
+          grep -iE "password\s*=\s*['\"][^*].*['\"]" SKILL.md && exit 1
+          grep -iE "secret\s*=\s*['\"][^*].*['\"]" SKILL.md && exit 1
+          grep -iE "api.?key\s*=\s*['\"][^*].*['\"]" SKILL.md && exit 1
+          grep -iE "token\s*=\s*['\"][^*].*['\"]" SKILL.md && exit 1
+          grep -iE "0x[a-fA-F0-9]{40,}" SKILL.md && exit 1
+          echo "OK"
+
+      - name: Validate all 9 skill subdirectories exist
+        run: |
+          for skill in using-praxis problem-classification architecture-reasoning code-quality-analysis decision-analysis diagnostic-reasoning gap-analysis security-reasoning strategic-reasoning; do
+            test -d "skills/$skill" || { echo "Missing: $skill"; exit 1; }
+          done
+
+      - name: Validate all 9 skill SKILL.md files exist
+        run: |
+          for skill in using-praxis problem-classification architecture-reasoning code-quality-analysis decision-analysis diagnostic-reasoning gap-analysis security-reasoning strategic-reasoning; do
+            test -f "skills/$skill/SKILL.md" || { echo "Missing: skills/$skill/SKILL.md"; exit 1; }
+          done
+
+      - name: Validate YAML frontmatter on all 9 skill SKILL.md files
+        run: |
+          for skill in using-praxis problem-classification architecture-reasoning code-quality-analysis decision-analysis diagnostic-reasoning gap-analysis security-reasoning strategic-reasoning; do
+            grep -q "^name:" "skills/$skill/SKILL.md" || { echo "Missing name: $skill"; exit 1; }
+          done

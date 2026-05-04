@@ -10,4 +10,26 @@ if [ ! -f "$SKILL_FILE" ]; then
 fi
 
 # Strip YAML frontmatter, emit skill content
-sed '1{/^---$/!q;};1,/^---$/d' "$SKILL_FILE"
+# The opening --- may not be on line 1 (blank lines, shebang, etc.)
+# so we scan for it rather than quitting on line-1 mismatch.
+in_frontmatter=false
+found_opening=false
+
+while IFS= read -r line || [ -n "$line" ]; do
+  if [ "$found_opening" = false ]; then
+    if [ "$line" = "---" ]; then
+      found_opening=true
+      in_frontmatter=true
+    fi
+    continue
+  fi
+
+  if [ "$in_frontmatter" = true ]; then
+    if [ "$line" = "---" ]; then
+      in_frontmatter=false
+    fi
+    continue
+  fi
+
+  printf '%s\n' "$line"
+done < "$SKILL_FILE"

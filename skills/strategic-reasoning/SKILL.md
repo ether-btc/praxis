@@ -97,9 +97,27 @@ Do NOT present a strategic recommendation without:
 - All 4 SWOT quadrants completed with 3+ items each
 - At least one initiative explicitly on the kill list
 - OKRs with measurable, verifiable key results
+</HARD-GATE>
 
-Rationalizations this skill catches:
+## Superpowers handoff
+
+After the strategic analysis is complete and the user confirms the direction:
+
+If Superpowers is installed → invoke `Skill(superpowers:brainstorming)` to translate the
+strategic direction into feature ideas, or `Skill(superpowers:writing-plans)` to create an
+implementation roadmap from the OKRs. Pass your real job statement, SWOT cross-references,
+kill list, and OKRs as context. Do NOT write the implementation plan inside this skill.
+PRAXIS strategized. Superpowers plans and builds.
+
+If Superpowers is NOT installed → proceed to implementation planning yourself using the
+strategic analysis as the foundation. Convert the OKRs into actionable work items.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
 - "The user already knows their strategy" — Then validate it. SWOT takes 2 minutes.
 - "This is just a quick feature decision" — If it affects what to build vs how, it's strategy.
 - "We don't need OKRs for this" — If you can't measure success, you can't verify it.
-</HARD-GATE>
+- "The market already moved" — Strategy still needs to be reasoned, even in fast-moving markets.
+- "We've always done it this way" — That's a weakness, not a strength.
+</RATIONALIZATION-CATCHING>

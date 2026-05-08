@@ -71,6 +71,17 @@ In 3-5 sentences, state:
 
 Present this to the user. Get confirmation before proceeding.
 
+## Output format
+
+```
+PROBLEM CLASSIFICATION
+├── Type: [NEW-BUILD / EXTEND / FIX / OPTIMIZE / DECIDE / ANALYZE]
+├── Constraints: [enumerated or confirmed unconstrained]
+├── Frameworks: [selected framework] + [supporting frameworks] — [one-sentence justification for each]
+├── Approach: [3-5 sentence framing of the real problem]
+└── Confidence: [HIGH / MEDIUM / LOW / INSUFFICIENT]
+```
+
 <HARD-GATE>
 Do NOT proceed to brainstorming, design, or implementation until:
 - Problem type is named
@@ -94,3 +105,14 @@ inside this skill. PRAXIS classified. Superpowers brainstorms.
 
 If Superpowers is NOT installed → proceed with your own design conversation using the
 selected frameworks. You are the only reasoning layer available.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
+- "I can handle this directly" — The skill's gates ARE the clarifying questions. Use them.
+- "This is straightforward" — Straightforward-seeming tasks with wrong framing produce
+  the most expensive failures.
+- "Let me just ask clarifying questions" — The skill's gates ARE the clarifying questions.
+- "I already know the problem type" — The skill ensures you classified it, not assumed.
+- "The user is in a hurry" — A 2-minute classification prevents a 2-week rework.
+</RATIONALIZATION-CATCHING>

@@ -106,17 +106,13 @@ CODE QUALITY ANALYSIS
 ├── Purity:       CQS [P/F] | Immutable [P/F] | NoSurprise [P/F]
 ├── Design:       Composition [P/F] | Orthogonal [P/F] | Simple [P/F]
 ├── Score:        [X/15 passed]
+└── Confidence: [HIGH / MEDIUM / LOW]
 └── Action items: [list any FAIL items with specific fix]
 ```
 
 <HARD-GATE>
 Code with 3+ FAIL items in the Safety or Structure categories should not
 ship without remediation. Flag these as blocking issues in code review.
-
-Rationalizations this skill catches:
-- "It works" — Working is the minimum bar. Well-designed is the standard.
-- "We'll refactor later" — Later never comes. Fix it now while context is fresh.
-- "It's just a prototype" — Prototypes become production. Build the habit.
 </HARD-GATE>
 
 ## Superpowers handoff
@@ -129,3 +125,13 @@ Safety and Structure FAILs are blocking items that Superpowers' code reviewer sh
 
 If Superpowers is NOT installed → present the report to the user with specific fix
 recommendations for each FAIL item.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
+- "It works" — Working is the minimum bar. Well-designed is the standard.
+- "We'll refactor later" — Later never comes. Fix it now while context is fresh.
+- "It's just a prototype" — Prototypes become production. Build the habit.
+- "The tests pass" — Tests verify behavior, not design quality. Both matter.
+- "It's readable enough" — If a junior engineer can't follow it, it's not readable.
+</RATIONALIZATION-CATCHING>

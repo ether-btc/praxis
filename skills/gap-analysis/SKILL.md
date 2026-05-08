@@ -91,12 +91,6 @@ Do NOT present a design, plan, or recommendation as final until all 7 checks
 are complete and reported. If any check reveals a critical issue (unmitigated
 failure mode, negative 2nd-order effect, MECE gap, or Type 1 decision with
 LOW confidence), you MUST address it before proceeding.
-
-Rationalizations that skip checks:
-- "This is straightforward" — straightforward things don't need gap analysis.
-  Non-trivial things do. If you're running this skill, it's non-trivial.
-- "The user is in a hurry" — a 2-minute check saves a 2-week failure.
-- "I already considered this" — show your work. Implicit checks don't count.
 </HARD-GATE>
 
 ## Superpowers handoff
@@ -108,3 +102,13 @@ implementation plan. Pass the validated design and any issues flagged during gap
 Do NOT write the plan inside PRAXIS. PRAXIS validated. Superpowers plans.
 
 If Superpowers is NOT installed → proceed to implementation planning yourself.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
+- "This is straightforward" — straightforward things don't need gap analysis. Non-trivial things do.
+- "The user is in a hurry" — a 2-minute check saves a 2-week failure.
+- "I already considered this" — show your work. Implicit checks don't count.
+- "The design looks good" — Gap analysis catches what design intuition misses.
+- "We've validated this informally" — Informal validation is not gap analysis.
+</RATIONALIZATION-CATCHING>

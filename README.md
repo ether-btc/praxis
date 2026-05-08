@@ -55,7 +55,7 @@ Built through iterations of testing and tuning. Every critical test passes.
 | Q4: Architecture quality | Reversibility, boundary analysis, bottleneck ID |
 | S1: Superpowers handoff | Praxis reasons first, then Superpowers executes |
 
-## The 8 skills
+## The 9 skills
 
 Each skill is a behavioral protocol with mandatory gates — not a reference document to browse.
 
@@ -137,4 +137,4 @@ MIT
 
 ---
 
-Built by [@_cyr4x](https://x.com/_cyr4x) · [GitHub](https://github.com/xD4O/praxis)
+Built by [@_cyr4x](https://x.com/_cyr4x) · [Fork](https://github.com/ether-btc/praxis) · [Original](https://github.com/xD4O/praxis)

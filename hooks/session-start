@@ -10,4 +10,5 @@ if [ ! -f "$SKILL_FILE" ]; then
 fi
 
 # Strip YAML frontmatter, emit skill content
-sed '1{/^---$/!q;};1,/^---$/d' "$SKILL_FILE"
+# Handles frontmatter starting on any line (not just line 1)
+sed -e '/^---$/,/^---$/d' "$SKILL_FILE"

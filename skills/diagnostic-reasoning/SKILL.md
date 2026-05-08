@@ -85,6 +85,19 @@ Ask "Why?" five times minimum:
 Stop when you reach a systemic cause (process, tooling, policy) rather than
 an individual cause (person made a mistake). Fix the systemic cause.
 
+## Output format
+
+```
+DIAGNOSTIC ANALYSIS
+├── Problem: [precise one-sentence description]
+├── Hypotheses: [H1/H2/H3/H4/H5 ranked by explanatory power × prior]
+├── Discriminating test: [single test that distinguishes top hypotheses]
+├── Result: [which hypotheses survive]
+├── Root cause: [5 Whys chain — systemic cause, not individual mistake]
+├── Fix: [specific change that addresses root cause]
+└── Confidence: [HIGH / MEDIUM / LOW / INSUFFICIENT]
+```
+
 ## PHASE 6 — Verify the fix
 
 After applying the fix:
@@ -98,13 +111,6 @@ Do NOT declare an issue fixed until:
 - Root cause is identified (not just the symptom patched)
 - Fix is verified against original observation
 - Recurrence prevention is in place or documented as needed
-
-Red flags that this skill catches:
-- "I think it might be..." — Generate 5 hypotheses, not 1 guess.
-- Changing code before collecting observations — Observe first. Always.
-- Testing hypotheses sequentially — Use Strong Inference to test simultaneously.
-- "Fixed!" after patching the symptom — Did you drill to root cause?
-- "Can't reproduce" — That's an observation, not a conclusion. What conditions differ?
 </HARD-GATE>
 
 ## Superpowers handoff
@@ -119,3 +125,14 @@ then fix. Do NOT write the fix inside this skill. PRAXIS diagnosed. Superpowers 
 
 If Superpowers is NOT installed → implement the fix yourself, following TDD principles
 where possible.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
+- "I think it might be..." — Generate 5 hypotheses, not 1 guess.
+- "I already know the cause" — The skill ensures you verified it, not just assumed.
+- "Changing code before collecting observations" — Observe first. Always.
+- "Testing hypotheses sequentially" — Use Strong Inference to test simultaneously.
+- "Fixed!" after patching the symptom — Did you drill to root cause?
+- "Can't reproduce" — That's an observation, not a conclusion. What conditions differ?
+</RATIONALIZATION-CATCHING>

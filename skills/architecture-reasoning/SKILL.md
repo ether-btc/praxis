@@ -113,3 +113,14 @@ PRAXIS architected. Superpowers plans and builds.
 
 If Superpowers is NOT installed → proceed to implementation planning yourself using
 the architecture analysis as the foundation.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
+- "It's just an internal module" — Internal modules become public contracts. Bound them correctly.
+- "We can refactor later" — Data models and API contracts cannot be refactored without migrations.
+- "This is a small change" — Small changes with wrong boundaries compound into big messes.
+- "I already know the architecture" — The skill ensures you verified it, not just assumed it.
+- "The team agrees" — Consensus doesn't replace analysis. Verify the architecture is sound.
+- "We've done this before" — Context changes. Re-run the analysis for this specific system.
+</RATIONALIZATION-CATCHING>

@@ -65,17 +65,27 @@ Produce a table:
 From the table, identify the 3 highest-severity unmitigated threats.
 For each, state the specific mitigation required before this code ships.
 
+## Output format
+
+```
+SECURITY ANALYSIS
+├── Trust boundaries: [list of boundaries identified]
+├── Attack surface:
+│   ├── [Boundary 1]: [S/T/R/I/D/E] → [mitigation status]
+│   ├── [Boundary 2]: [S/T/R/I/D/E] → [mitigation status]
+│   └── ...
+├── Top 3 risks:
+│   1. [Risk] → [specific mitigation required]
+│   2. [Risk] → [specific mitigation required]
+│   3. [Risk] → [specific mitigation required]
+└── Confidence: [HIGH / MEDIUM / LOW]
+```
+
 <HARD-GATE>
 Do NOT approve, merge, or present security-sensitive code as complete until:
 - All trust boundaries are identified
 - STRIDE is answered for each boundary (no blanks)
 - Top 3 risks have specific mitigations
-
-Red flags that this skill catches:
-- "We'll add auth later" — NO. Auth is a design decision, not a feature.
-- "It's internal only" — Internal networks get compromised. Defense in depth.
-- "The framework handles it" — WHICH framework feature? Is it enabled? Configured?
-- "We validate on the client" — Client validation is UX. Server validation is security.
 </HARD-GATE>
 
 ## Superpowers handoff
@@ -89,3 +99,14 @@ mitigations inside this skill — hand the requirements to Superpowers for execu
 
 If Superpowers is NOT installed → proceed to implementation with the mitigations as
 requirements in your own plan.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
+- "We'll add auth later" — NO. Auth is a design decision, not a feature.
+- "It's internal only" — Internal networks get compromised. Defense in depth.
+- "The framework handles it" — WHICH framework feature? Is it enabled? Configured?
+- "We validate on the client" — Client validation is UX. Server validation is security.
+- "We don't handle payments" — STRIDE applies to all trust boundaries, not just payments.
+- "This is a small internal script" — Security applies to all code with trust boundaries.
+</RATIONALIZATION-CATCHING>

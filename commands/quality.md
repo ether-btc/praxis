@@ -2,4 +2,7 @@
 description: "Run 15-point code quality analysis on current code"
 disable-model-invocation: true
 ---
-Invoke the praxis:code-quality-analysis skill and follow it exactly as presented to you.
+Read the sub-protocol via bash:
+`find ~/.claude -path "*/praxis/skills/code-quality-analysis/SKILL.md" -exec cat {} \;`
+
+Then invoke it completely — run all 15 checks in order. Do NOT respond directly.

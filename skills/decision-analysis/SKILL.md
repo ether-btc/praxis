@@ -110,3 +110,14 @@ risks as context. Let Superpowers drive the design of the chosen approach.
 
 If Superpowers is NOT installed → proceed to design or implementation based on the
 recommendation.
+
+<RATIONALIZATION-CATCHING>
+If you find yourself thinking any of these, you are about to violate the protocol:
+
+- "Let's just go with X" — Evaluate at least 3 options including "do nothing."
+- "The first option looks fine" — Anchoring bias. The first option is rarely the best.
+- "We don't need 'do nothing'" — Do nothing is always a valid option. State why it's not.
+- "I know what's right" — The skill ensures you evaluated alternatives, not just asserted.
+- "This is a quick decision" — Quick decisions with long tails need the same rigor.
+- "The user asked for X" — The skill ensures you evaluated alternatives, not just obeyed.
+</RATIONALIZATION-CATCHING>

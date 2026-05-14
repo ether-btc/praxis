@@ -1,6 +1,11 @@
 ---
 name: praxis
-description: Multi-agent reasoning framework with 9 mandatory protocol skills. Always invoke using-praxis first to classify the problem, then run problem-classification before brainstorming. Each protocol is a mandatory enforcement layer — not optional guidance.
+description: >
+  Multi-agent reasoning framework with 9 mandatory protocol skills. Always invoke
+  using-praxis first to classify the problem, then run problem-classification before
+  brainstorming. Each protocol is a mandatory enforcement layer — not optional guidance.
+  For Hermes Agent: skills are available as individual SKILL.md files under
+  ~/.hermes/skills/praxis-*. See HERMES_PORT.md for installation and usage.
 version: 1.0.0
 ---
 
@@ -45,6 +50,12 @@ user request
 - **Under 150 lines per skill**: If longer, it does too many things
 - **Structured output**: Results are auditable
 - **Confidence levels**: Every analysis output includes a confidence assessment
+
+## Hermes Agent Port
+
+See [HERMES_PORT.md](./HERMES_PORT.md) for the Hermes Agent adaptation —
+individual SKILL.md files installed under `~/.hermes/skills/praxis*/`,
+invocable via `skill_view(name='praxis')` and `skill_view(name='praxis-<sub-skill>')`.
 
 ## Dependencies
 
